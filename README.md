@@ -248,6 +248,7 @@ Also, since the given data is a bit biased towards NO it would be ideal to use t
 ![image](https://github.com/Khandace/Autism-Detection/assets/95150377/d38ad410-2af1-488f-8d64-adb164f4cf70)
 
 Conclusion
+
 The idea of autism screening is to create a broad perspective on the extent of the traits and how best to treat them at the early stages. According to (Thabtah and Peebles, 2020)existing screening systems, such as AQ, Q-CHAT, and a slew of others, rely on simple math, with scoring functions that sum the scores of individual responses. These score functions were used during the screening technique. Because it was designed using handcrafted criteria, it can be accused of being subjective. Therefore, improving the assessment process is one of the most critical considerations in ASD screening research. Individuals and their families will benefit from a more efficient and accurate service. The models in this paper will most likely aid in the prediction of autism though it did not take into consideration toddlers, the models can be further modified to predict autism in toddlers.
 A personal reflection on the analysis indicated that most individuals are most likely to fall under ASD if they have these traits A9_score, A6_score and A5_score rather than inheriting it from a relative.
 
