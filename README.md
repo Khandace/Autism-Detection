@@ -5,18 +5,25 @@ The main aim of this paper is to use my understanding of machine learning to tra
 Based on the objective of this paper the intention is to find the best model for classifying or predicting autism
 This entire process is practically otherwise known as advanced decision making- predictive analytics and machine learning.  This will be done using R-Studio.
 
+
 METHODOLOGY
+
 The methodology can simply be described as the approach taken to ensure all necessary steps needed to prepare and explore the data critically are carefully taken. This ensures that proper analysis, forecasting, and predictions are drawn with much accuracy and with little to no errors.  The data is first collected, prepared, and explored to see the impact of the independent variables on the dependent variable such as CLASS/ASD. 
+
 Data Acquisition & Preparation 
 The data for this project was taken from the UCI Machine Learning Repository website (UCI website) as shown below:
 Source of Data: Autism Screening Adult Dataset 
  
 Data Analysis
+
 This engulfs the entire project because it is the process of acquiring, preparing, cleaning, exploring, visualising, and modelling data to gain meaningful insight for decision making. 
+
 Description of Dataset
 Dataset is all the data collected on a subject matter usually in a tabulated format with several instances and objects, attributes, or features. The dataset is the autism screening of adults both male and female who are within the age of 17years or more, born with jaundice or have a relative who has PDD and falls within the White-European, Latino, Black, Middle Eastern, Asian and others. It also recorded whether the user has used the screening app before and who completed the test whether it was completed by a health care professional, parent, relative or by an individual.
+
 Sample Size
 The dataset has 704 instances and 21 features, in this data 10 behavioural characteristics were recorded and were classified into A1-A10_score and any individual that showed 7 or more of these behaviours was classified as autistic.
+
 Data Cleaning
 It is the process of identifying and correcting (if possible) or deleting all inaccurate, incomplete, or corrupt records and illegal characters in a dataset.
 There are a few errors within the ASD dataset that needs to be corrected such as:
@@ -24,44 +31,71 @@ There are a few errors within the ASD dataset that needs to be corrected such as
 •	Duplicates: There are 2 levels of others under Ethnicity  ' others' and 'Others' need to be corrected to just one level, say Other.
 •	Illegal characters: Correct Class/ASD to Class.ASD this because R-programming does not recognise the symbol ''/''.
 •	Also, the countries and some other observations have quotes, this needs to be erased.
-3.	DATA EXPLORATION
+
+DATA EXPLORATION
 It can be termed as a basic data analysis approach that helps in understanding the dataset at full length in other to carry out further analysis. Exploring the data helps to understand each feature or object in the dataset and how they impact the dependent variable. Also, helps to highlight which areas or patterns within the dataset to further explore.
+
 Head of Dataset
+
 ![image](https://github.com/Khandace/Autism-Detection/assets/95150377/974602fb-59af-4954-abd3-a15a44f8e587)
+
 Structure of Dataset
 ![image](https://github.com/Khandace/Autism-Detection/assets/95150377/397fc22d-089a-4916-b497-c3433096ebf4)
+
 Statistical Summary of the Dataset
 ![image](https://github.com/Khandace/Autism-Detection/assets/95150377/c85455be-c8ad-4cb3-9e13-c54da865be36)
+
 The summary of data above shows that under the feature Class.ASD, 515 NO which represents the individuals without ASD and 189 YES represent individuals with autism, under gender, there are 337 females and 367 males, 69 of these people were born with jaundice and 635 were not while 91 of them have relatives with PDD/autism and 613 without. Only 12 people used the screening app and 690 did not. Taking a closer look at the data relation and ethnicity have 95 observations that are not recorded this could be because of missing data, and oversight during the collation and collection of data or the data is just unknown.
+
 Missing data
 ![image](https://github.com/Khandace/Autism-Detection/assets/95150377/37cc33da-86af-418f-b5dc-70e2a048d7b6)
+
 The missingness map above shows that 2 observations of Age are missing, and all others are not even though the main data showed there were other observations like Ethnicity and Relation missing some values this was not captured by the missingness map. Both Relation and Ethnicity have 95 missing observations.
 Deleted Rows
 The data had several empty rows or missing observations which could not be filled using my discretion, therefore it was necessary to delete those rows and deal with the rows with complete or no missing values. Initially, the data contained 704 rows but after deleting the rows with missing values we are left with 609, most of these rows were relation and ethnicity (95 rows each) including the 2 rows for age with missing values were also deleted.
-The entire deletion process/data cleaning down manually in excel.
+
 Outlier
 While going through my data to understand its characteristics and how best to explore it to give me a critical overview of the data entails, it was noticed in the age column, apart from 2 missings values there was an extreme value under age which was 383, since most people or no one lives that long, also the data had several errors which needed to be cleaned it was reasonable to ascertain that this age could be a result of typing mistake and replace with age 38.
+
 Summary Data after Deletion of Rows
 ![image](https://github.com/Khandace/Autism-Detection/assets/95150377/486bc078-cfc6-4e85-8ec8-dec6657b9387)
+
 Overview of Dependent Variable
 ![image](https://github.com/Khandace/Autism-Detection/assets/95150377/f0085010-9696-419f-8b71-284ed91b49ec)
+
 The statistics of the dependent variable show that most individuals tested negative (NO) which is a bit biased towards the project since the main aim of this paper is to predict the presence of Autism. Also, the difference between the median and mean shows that the dependent variable is not evenly distributed.
+
 Implementation and Data Visualisation 
+
 Boxplots
 ![image](https://github.com/Khandace/Autism-Detection/assets/95150377/ab6c6e69-6f4f-46ec-b11f-39486c5f2d53)
+
 The male and female distributions, as well as their ages, are depicted in the boxplots above. The participants range in age from late teens to early sixties. Because the median is not in the centre of the box and the whiskers are not the same on both sides, neither boxplot is normally distributed. Outliers in boxplots are extreme values rather than errors.
+
 ![image](https://github.com/Khandace/Autism-Detection/assets/95150377/bd2aa98f-9b39-4d19-aa92-0ab0a2eced32)
+
 The distribution of screening findings for both genders is shown in the boxplots above, and the distributions are symmetric. The whiskers are all the same length, and the median appears to be in the middle of the box. During the screening, both genders appear to have an equal representation.
+
 Pie Chart and Bar plot
+
 Pie Chart on Ethnicity
+
 ![image](https://github.com/Khandace/Autism-Detection/assets/95150377/000a1ad0-e3f4-44b8-bd26-267ca710e7d2)
+
 The percentage of each ethnicity present during the screening procedure is depicted in the pie chart above. White Europeans account for 38% of the population, followed by Asians and Middle Easterners with 20% and 15%, respectively. Other forms of ethnicity were in the minority.
+
 Bar plot on Class.ASD
+
 ![image](https://github.com/Khandace/Autism-Detection/assets/95150377/1cd640d4-cfd1-4522-b931-ccb960cdf002)
+
 The distribution of Class.ASD is highlighted in the barplot above. It reveals that most people do not fit into Class.ASD, indicating that their scores are below 7. Individuals without autism are represented by the "No" barplot, whereas those with autism are represented by the "YES" barplot.
+
 Pie Chart on Relation
+
 ![image](https://github.com/Khandace/Autism-Detection/assets/95150377/a90d19b4-02b3-4039-ab6e-1023f5d92246)
+
 The data above shows that 86 percent of people (self) completed the screening, followed by parents and relatives with 8% and 5%, respectively, and healthcare professionals and others with 1%.
+
 Bar plot on Used_app_before
 ![image](https://github.com/Khandace/Autism-Detection/assets/95150377/2957a960-b3c6-4453-8a21-d35eb9274760)
 The bar plot shows that most people did use the app for their screening.
