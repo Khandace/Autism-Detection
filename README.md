@@ -1,4 +1,5 @@
 Aims and Objectives
+
 The main aim of this paper is to use my understanding of machine learning to transform data on autism screening for adults into actionable intelligence, to build a model capable of detecting individuals who are most likely to suffer from ASD by highlighting.
 *	Individuals with a relative born with PDD (Pervasive Developmental Disorder)
 * Individuals born with jaundice and/or have a relative with PDD.
