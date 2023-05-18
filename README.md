@@ -83,15 +83,14 @@ Implementation and Data Visualisation
 
 Boxplots
 
+![image](https://github.com/Khandace/Autism-Detection/assets/95150377/963c8ea5-fef4-4f21-a4c2-8105c77ebd37)
+
+
 ![image](https://github.com/Khandace/Autism-Detection/assets/95150377/c84f6db3-bae0-4df3-9ad4-de9456f73a82)
 
 The male and female distributions, as well as their ages, are depicted in the boxplots above. The participants range in age from late teens to early sixties. Because the median is not in the centre of the box and the whiskers are not the same on both sides, neither boxplot is normally distributed. Outliers in boxplots are extreme values rather than errors.
 
-![image](https://github.com/Khandace/Autism-Detection/assets/95150377/ab6c6e69-6f4f-46ec-b11f-39486c5f2d53)
-
-The distribution of screening findings for both genders is shown in the boxplots above, and the distributions are symmetric. The whiskers are all the same length, and the median appears to be in the middle of the box. During the screening, both genders appear to have an equal representation.
-
-![image](https://github.com/Khandace/Autism-Detection/assets/95150377/bd2aa98f-9b39-4d19-aa92-0ab0a2eced32)
+![image](https://github.com/Khandace/Autism-Detection/assets/95150377/9ee8c360-6ff3-46ce-a4ea-66ecf8512265)
 
 The distribution of screening findings for both genders is shown in the boxplots above, and the distributions are symmetric. The whiskers are all the same length, and the median appears to be in the middle of the box. During the screening, both genders appear to have an equal representation.
 
