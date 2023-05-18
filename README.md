@@ -11,7 +11,8 @@ METHODOLOGY
 
 The methodology can simply be described as the approach taken to ensure all necessary steps needed to prepare and explore the data critically are carefully taken. This ensures that proper analysis, forecasting, and predictions are drawn with much accuracy and with little to no errors.  The data is first collected, prepared, and explored to see the impact of the independent variables on the dependent variable such as CLASS/ASD. 
 
-Data Acquisition & Preparation 
+Data Acquisition & Preparation
+
 The data for this project was taken from the UCI Machine Learning Repository website (UCI website) as shown below:
 Source of Data: Autism Screening Adult Dataset 
  
@@ -20,9 +21,11 @@ Data Analysis
 This engulfs the entire project because it is the process of acquiring, preparing, cleaning, exploring, visualising, and modelling data to gain meaningful insight for decision making. 
 
 Description of Dataset
+
 Dataset is all the data collected on a subject matter usually in a tabulated format with several instances and objects, attributes, or features. The dataset is the autism screening of adults both male and female who are within the age of 17years or more, born with jaundice or have a relative who has PDD and falls within the White-European, Latino, Black, Middle Eastern, Asian and others. It also recorded whether the user has used the screening app before and who completed the test whether it was completed by a health care professional, parent, relative or by an individual.
 
 Sample Size
+
 The dataset has 704 instances and 21 features, in this data 10 behavioural characteristics were recorded and were classified into A1-A10_score and any individual that showed 7 or more of these behaviours was classified as autistic.
 
 Data Cleaning
