@@ -232,7 +232,9 @@ CrossTable(test_sample$Class.ASD, at2_prune_pred, prop.chisq = FALSE, prop.c = F
 
 ![image](https://github.com/Khandace/Autism-Detection/assets/95150377/a1ef5672-2b09-4188-ad97-ceea96fcd656)
 
+
 at2_AUC@y.values
+
 
 0.9516002
 
