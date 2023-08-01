@@ -220,7 +220,7 @@ svm1 <- ksvm(Class.ASD ~ ., data = df1.asd_train, kernel = "rbfdot", type = "C-s
 # Best Model
 
 at2_prune <- C5.0(train_sample[-16], train_sample$Class.ASD,
-                      control = C5.0Control(minCases = 15), trials = 100) # 1% training obs.
+C5.0Control (minCases = 15, trials = 100) # 1% training obs.
 plot(at2_prune)
 summary(at2_prune)
 at2_prune_pred <- predict(at2_prune, test_sample)
@@ -232,9 +232,9 @@ CrossTable(test_sample$Class.ASD, at2_prune_pred, prop.chisq = FALSE, prop.c = F
 
 ![image](https://github.com/Khandace/Autism-Detection/assets/95150377/a1ef5672-2b09-4188-ad97-ceea96fcd656)
 
-> at2_AUC@y.values
-[[1]]
-[1] 0.9516002
+at2_AUC@y.values
+
+0.9516002
 
 From the decision tree, it can be seen that 2 of the variables that highly correlated to the dependent variable formed the root nodes. The model has an accuracy of approximately 95% with significantly higher specificity and sensitivity. It has a Kappa of 0.89% which means there is a strong agreement.
 
